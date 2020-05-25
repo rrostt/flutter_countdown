@@ -5,13 +5,9 @@ import 'model.dart';
 import 'views/add_event.dart';
 import 'views/home.dart';
 
-import './flutter_recoil.dart';
-
 void main() {
   Provider.debugCheckInvalidValueType = null;
-  runApp(
-    Provider(create: (context) => StateStore(), child: MyApp()),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
